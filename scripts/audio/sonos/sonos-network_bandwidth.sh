@@ -16,6 +16,4 @@ INTERFACE=$2
 DOMAIN="pulpfree.net"
 URL="http://${HOSTNAME}.${DOMAIN}:1400/status/ifconfig"
 
-echo ${URL}
-
 wget -qO- ${URL} | grep -A 6 ${INTERFACE} | grep "RX bytes:" | awk '{print $2,$6;}' | sed -n 1p | sed 's/bytes/rxBytes/' | sed 's/bytes/txBytes/'
