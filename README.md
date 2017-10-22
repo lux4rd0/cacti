@@ -60,5 +60,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * Thanks to the great folks at Cacti for their assistance...
-* Random help from one of the best scripters I know - Tomek Mozolowski
+* Random help from one of the best scripters I know - Tomasz Mozolewski
 
