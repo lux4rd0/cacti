@@ -12,7 +12,7 @@ More information about Cacti - https://www.cacti.net/index.php
 
 MIT License
 
-Copyright (c) 2017 David Schmid
+Copyright (c) 2017 Dave Schmid
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
