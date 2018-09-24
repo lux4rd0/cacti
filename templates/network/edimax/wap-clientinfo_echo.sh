@@ -3,8 +3,8 @@
 #
 
 HOSTNAME=$1
-IPADDRESS=`resolveip -s ${HOSTNAME}`
-MACADDRESS=`ip neigh show ${IPADDRESS} |awk '{print $5}'`
+IPADDRESS=`/usr/bin/resolveip -s ${HOSTNAME}`
+MACADDRESS=`/usr/sbin/ip neigh show ${IPADDRESS} |awk '{print $5}'`
 
 if [ "${MACADDRESS}" = "" ]; then
 
