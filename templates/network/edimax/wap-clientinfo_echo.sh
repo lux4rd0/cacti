@@ -3,8 +3,17 @@
 #
 
 HOSTNAME=$1
+IPADDRESS=`resolveip -s ${HOSTNAME}`
+MACADDRESS=`ip neigh show ${IPADDRESS} |awk '{print $5}'`
 
-MACADDRESS=`/usr/sbin/arp -a ${HOSTNAME} | sed -n -e 's/^.*at //p' |cut -c1-17`
+if [ "${MACADDRESS}" = "" ]; then
+
+echo "wapbasement:0 wapoffice:0 wapgarage:0 wapmb:0 waplounge:0 waploft:0"
+
+exit 1
+
+fi
+
 
 LOG=/mnt/attic/logs/metrics
 
@@ -20,7 +29,7 @@ if [ "${CHECK}" -eq "1" ]; then
 
 else
 
-   WAPBASEMENT="null"
+   WAPBASEMENT="0"
 
 fi 
 
@@ -37,7 +46,7 @@ if [ "${CHECK}" -eq "1" ]; then
 
 else
 
-   WAPOFFICE="null"
+   WAPOFFICE="0"
 
 fi
 
@@ -55,7 +64,7 @@ if [ "${CHECK}" -eq "1" ]; then
 
 else
 
-   WAPGARAGE="null"
+   WAPGARAGE="0"
 
 fi
 
@@ -72,7 +81,7 @@ if [ "${CHECK}" -eq "1" ]; then
 
 else
 
-   WAPMB="null"
+   WAPMB="0"
 
 fi
 
@@ -89,7 +98,7 @@ if [ "${CHECK}" -eq "1" ]; then
 
 else
 
-   WAPLOUNGE="null"
+   WAPLOUNGE="0"
 
 fi
 
@@ -107,7 +116,7 @@ if [ "${CHECK}" -eq "1" ]; then
 
 else
 
-   WAPLOFT="null"
+   WAPLOFT="0"
 
 fi
 
