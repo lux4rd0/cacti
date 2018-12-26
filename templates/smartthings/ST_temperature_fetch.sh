@@ -1,6 +1,8 @@
 #
 # SmartThings Google Docs - Temperature
 #
+# Uses packages from ocaml-csv - https://github.com/Chris00/ocaml-csv
+#
 
 LOG="/mnt/attic/logs/metrics"
 
