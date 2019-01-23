@@ -4,6 +4,7 @@
 
 HOSTNAME=$1
 IPADDRESS=`/usr/bin/resolveip -s ${HOSTNAME}`
+SILENTPING=`/usr/sbin/fping -c1 -t100 ${HOSTNAME} > /dev/null 2>&1`
 MACADDRESS=`/usr/sbin/ip neigh show ${IPADDRESS} |awk '{print $5}'`
 
 if [ "${MACADDRESS}" = "" ]; then
