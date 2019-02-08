@@ -1,0 +1,1 @@
+*/1 * * * * /mnt/attic/scripts/metrics/ST_temperature_fetch.sh > /dev/null 2>&1
