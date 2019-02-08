@@ -1,0 +1,2 @@
+*/1 * * * * /mnt/attic/scripts/metrics/tesla_metrics.sh > /dev/null 2>&1
+*/1 * * * * sleep 30; /mnt/attic/scripts/metrics/tesla_metrics.sh > /dev/null 2>&1
