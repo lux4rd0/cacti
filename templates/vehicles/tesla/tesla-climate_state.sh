@@ -2,7 +2,6 @@
 # TESLA Climate State
 #
 
-
 log_file="/mnt/attic/logs/metrics/tesla_metrics.txt"
 
 driver_temp_setting=`cat ${log_file} |grep -o -E ' driver_temp_setting:[^ ]+' | sed 's/ driver_temp_setting://'`
