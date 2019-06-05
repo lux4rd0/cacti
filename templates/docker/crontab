@@ -1,0 +1,2 @@
+# Docker Details
+*/1 * * * * docker ps -a --no-trunc --format "{{.ID}} {{.Names}}" > /mnt/attic/logs/metrics/docker-`hostname`-IDs.txt
