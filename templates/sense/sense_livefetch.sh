@@ -1,1 +1,1 @@
-/mnt/attic/scripts/metrics/websocat -n wss://clientrt.sense.com/monitors/26056/realtimefeed -H "Authorization: bearer TOKEN" -H "Sense-Client-Version: 1.17.1-20c25f9" -H "X-Sense-Protocol: 3" -H "User-Agent: okhttp/3.8.0"
+/mnt/attic/scripts/metrics/websocat -n wss://clientrt.sense.com/monitors/<monitorID>/realtimefeed -H "Authorization: bearer TOKEN" -H "Sense-Client-Version: 1.17.1-20c25f9" -H "X-Sense-Protocol: 3" -H "User-Agent: okhttp/3.8.0"
