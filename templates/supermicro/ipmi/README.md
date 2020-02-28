@@ -1,11 +1,7 @@
 # Cacti Graph and Data Templates for Supermicro SuperServer 5018D-FN8T
 
-## Getting Started
+Examples
 
-Import into Cacti
+Temperatures
 
-### Prerequisites
-
-Cacti 1.28
-
-
+![Temperatures](cacti_graph_template_ipmi_-_temperatures.png)
